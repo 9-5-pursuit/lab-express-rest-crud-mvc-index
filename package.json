@@ -1,0 +1,27 @@
+{
+  "name": "express-fitness",
+  "version": "1.0.0",
+  "description": "Awesome fitness place.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "jest **/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joinpursuit/express-fitness.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joinpursuit/express-fitness/issues"
+  },
+  "homepage": "https://github.com/joinpursuit/express-fitness#readme",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "jest": "^28.1.0",
+    "supertest": "^6.2.3"
+  }
+}
