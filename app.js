@@ -3,15 +3,21 @@ const logger = require('morgan')
 
 const app = express()
 const locations = require('./controllers/locations.controller')
-const  machines = require('./controllers/machines.controller')
+const machines = require('./controllers/machines.controller')
 const persons = require('./controllers/persons.controller')
-const plan = require('./controllers/')
-const  = require('./controllers/')
+const plans = require('./controllers/plans.controller')
+const specialEvents = require('./controllers/special-events.controller')
 
-app.use(express.json())
 app.use(logger('dev'))
-app.use(express.Router())
+app.use(express.json())
 
-app.use
+app.use('/locations', locations)
+app.use('/machines', machines)
+app.use('/persons', persons)
+app.use('/plans', plans)
+app.use('/specialEvents', specialEvents)
 
+app.get('*', (req,res) => {
+    res.status(404).send("Hello, world!")
+})
 module.exports = app;
