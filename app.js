@@ -15,9 +15,15 @@ app.use('/locations', locations)
 app.use('/machines', machines)
 app.use('/persons', persons)
 app.use('/plans', plans)
-app.use('/specialEvents', specialEvents)
+app.use('/special-events', specialEvents)
+
+
+app.get('/', (req,res) => {
+    res.send('Hello, world!')
+})
 
 app.get('*', (req,res) => {
-    res.status(404).send("Hello, world!")
+    res.status(404).send("Sorry, no page found!")
 })
+
 module.exports = app;
