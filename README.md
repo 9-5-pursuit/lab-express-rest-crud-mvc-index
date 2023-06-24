@@ -245,7 +245,7 @@ Create a `GET` route at `/locations/people` that organizes each person according
     street: "23 Broadway",
     city: "New York",
     state: "NY",
-    zip: "11011",
+    zip: "10011",
     members: [
       {
         name: "Amandine",
