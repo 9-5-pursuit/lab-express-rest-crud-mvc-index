@@ -18,10 +18,13 @@
     "url": "https://github.com/joinpursuit/express-fitness/issues"
   },
   "homepage": "https://github.com/joinpursuit/express-fitness#readme",
-  "dependencies": {
-  },
   "devDependencies": {
-    "jest": "^28.1.0",
+    "jest": "^28.1.3",
     "supertest": "^6.2.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0"
   }
 }
