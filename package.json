@@ -4,7 +4,7 @@
   "description": "Awesome fitness place.",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "nodemon server.js",
     "test": "jest **/*.test.js"
   },
   "repository": {
@@ -18,10 +18,12 @@
     "url": "https://github.com/joinpursuit/express-fitness/issues"
   },
   "homepage": "https://github.com/joinpursuit/express-fitness#readme",
-  "dependencies": {
-  },
   "devDependencies": {
     "jest": "^28.1.0",
     "supertest": "^6.2.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
   }
 }
