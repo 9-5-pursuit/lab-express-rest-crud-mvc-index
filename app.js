@@ -8,7 +8,7 @@ const plansController = require("./controllers/plans.controller.js");
 const specialEventsController = require("./controllers/special-events.controller.js");
 
 app.get("/", (request, response) => {
-  response.send("Hello, World!");
+  response.send("Hello, world!");
 });
 
 app.get("/locations", (request, response) => {
