@@ -11,21 +11,13 @@ app.get("/", (request, response) => {
   response.send("Hello, world!");
 });
 
-app.get("/locations", (request, response) => {
-  response.send(locationsController);
-});
-app.get("/machines", (resquest, response) => {
-  response.send(machinesController);
-});
-app.get("/persons", (request, response) => {
-  response.send(personsController);
-});
-app.get("/plans", (request, response) => {
-  response.send(plansController);
-});
-app.get("/special-events", (request, response) => {
-  response.send(specialEventsController);
-});
+
+
+app.use("/locations", locationsController);
+app.use("/machines", machinesController);
+app.use("/persons", personsController);
+app.use("/plans", plansController);
+app.use("/special-events", specialEventsController);
 
 app.get("*", (request, response) => {
   response.status(404).json({ error: "Page not found" });
